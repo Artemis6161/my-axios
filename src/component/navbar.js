@@ -16,9 +16,10 @@ const Navbar = () => {
   return (
     
       <nav className="navbarItems">
+         
         <h1 className="navbar-logo">Trippy</h1>
         
-     
+        
       <div onClick={handleClick} className="menu-icons">
        
         {click ? <i className="fas fa-times" ></i>:
@@ -42,7 +43,10 @@ const Navbar = () => {
     );
     
     })}
-        <button>Sign Up</button>
+    <Link  to={"/signup"}>
+    <button>Sign Up</button>
+    </Link>
+        
         
         </ul> 
         {/* </div> */}

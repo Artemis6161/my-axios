@@ -18,15 +18,7 @@ const App = () => {
   return (
     <div className='app'>
      
-      {/* <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home/>}/>
-        </Routes>
-        <Routes>
-          <Route path="/about" element={<About/>}/>
-        </Routes>
-
-      </BrowserRouter> */}
+      
       <RouterProvider router={router} />
     </div>
   )
