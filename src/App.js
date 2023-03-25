@@ -1,25 +1,93 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
 
-function App() {
+import Home from "./component/home"
+import About from "./component/about"
+import Service from "./component/service"
+import Contact from "./component/contact"
+import Signup from "./component/signup"
+import "../src/App.css"
+import {
+  createBrowserRouter,
+ 
+  RouterProvider,
+ 
+} from "react-router-dom";
+
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <div className='app'>
+     
+      {/* <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+        </Routes>
+        <Routes>
+          <Route path="/about" element={<About/>}/>
+        </Routes>
 
-export default App;
+      </BrowserRouter> */}
+      <RouterProvider router={router} />
+    </div>
+  )
+}
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element:  
+   <Home/>
+  
+   
+  },
+  {
+    path: "/about",
+    element:  
+   <About/>
+   
+  },
+  {
+    path: "/service",
+    element:  
+   <Service/>
+   
+  },
+  {
+    path: "/contact",
+    element:  
+   <Contact/>
+   
+  },
+  {
+    path: "/signup",
+    element:  
+   <Signup/>
+   
+  },
+]);
+export default App
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
