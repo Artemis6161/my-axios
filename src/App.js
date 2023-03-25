@@ -19,7 +19,7 @@ const App = () => {
     <div className='app'>
      
       
-      <RouterProvider router={router} />
+      <RouterProvider  router={router} />
     </div>
   )
 }
