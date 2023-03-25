@@ -25,7 +25,7 @@ const App = () => {
 }
 const router = createBrowserRouter([
   {
-     path: "/my-axios",
+     path: "/",
     element:  
    <Home/>
   
