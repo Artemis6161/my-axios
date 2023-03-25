@@ -1,7 +1,7 @@
 export const NavItems =[
     {
         title : "Home",
-url: "/home",
+url: "/my-axios",
 cname : "nav-links",
 icons: "fa-solid fa-house-user"
 
