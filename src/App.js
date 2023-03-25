@@ -18,14 +18,14 @@ const App = () => {
   return (
     <div className='app'>
      
-     {/* basename="/my-axios" */}
-      <RouterProvider router={router} />
+     
+      <RouterProvider basename="/my-axios" router={router} />
     </div>
   )
 }
 const router = createBrowserRouter([
   {
-     path: "/",
+     path: "/my-axios",
     element:  
    <Home/>
   
