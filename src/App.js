@@ -19,7 +19,7 @@ const App = () => {
     <div className='app'>
      
       
-      <RouterProvider  router={router} />
+      <RouterProvider basename="/my-axios" router={router} />
     </div>
   )
 }
