@@ -110,7 +110,7 @@ button:hover{
   }
   .nav-menu.active{
     
-    background: #ffff;
+    background: #1f1179;
     left: 0;
     opacity: 1;
     transition: all 0.5s ease;
