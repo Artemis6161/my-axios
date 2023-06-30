@@ -34,8 +34,8 @@ const Navbar = () => {
         <ul className={click ? 'nav-menu active' : 'nav-menu'} >
         {NavItems.map((item,index)=>{
     return(
-     <li key={index} onClick={closeMenu} >
-     <Link className={item.cname} to={item.url}>
+     <li key={index}  className='nav-item'>
+     <Link className={item.cname} to={item.url} onClick={closeMenu}>
    
 <i className={item.icons}></i>   {item.title}
 </Link>
@@ -43,7 +43,7 @@ const Navbar = () => {
     );
     
     })}
-    <Link  to={"/signup"}>
+    <Link  to={"/signup"} className='nav-links-mobile'>
     <button>Sign Up</button>
     </Link>
         
