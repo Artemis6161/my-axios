@@ -80,12 +80,22 @@ button:hover{
   .NavbarItems{
     position: relative;
 }
-    .navbar-logo{
-padding: 0 1rem  1rem 2rem;
-    }
-    .menu-icons{
-      padding-right:2rem;
-    }
+.navbar-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(25%, 50%);
+}
+
+.menu-icon {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-100%, 60%);
+  font-size: 1.8rem;
+  cursor: pointer;
+}
 
   .nav-menu{
     display: flex;
