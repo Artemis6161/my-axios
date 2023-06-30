@@ -131,18 +131,16 @@ button{
 display: none;
 }
   .nav-links-mobile{
-display: block;
-text-align: center;
-padding: 1.5rem;
-margin: auto;
-border-radius: 4px;
-width: 80%;
-background-color: #01959a;
-text-decoration: none;
-color: #fff;
-font-size: 1.2rem;
-font-weight: 700;
-letter-spacing: 2px;
+    display: block;
+    text-align: center;
+    padding: 1.5rem;
+    margin: 2rem auto;
+    border-radius: 4px;
+    width: 80%;
+    background: #01959a;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
   }
   .menu-icons{
     display: flex;
